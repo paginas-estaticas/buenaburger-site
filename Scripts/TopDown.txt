@@ -1,0 +1,5 @@
+Register menu sections as variables.
+
+Add event listener to menu section
+
+
