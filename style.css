@@ -57,10 +57,10 @@ header nav ul {
 }
 
 header nav ul li {
-    color: #1d56bf;
+    margin-left: 30px;
     font-size: 24px;
     list-style-type: none;
-    margin-left: 30px;
+    color: #1d56bf;
 }
 
 header nav a {
@@ -114,6 +114,7 @@ main {
 
 .blue-button {
     all: unset;
+    font-family: "Anton", sans-serif;
     font-size: 32px;
     color: white;
     margin: 0 auto;
@@ -203,14 +204,19 @@ button a {
 
 .section-card a {
     all: unset;
+}
+
+.section-card-div-img {
+    width: 100%;
+    overflow: hidden;
     position: relative;
-    z-index: 1;
 }
 
 .section-card img {
     width: 100%;
+    margin: 0 auto;
     height: auto;
-    overflow: hidden;
+    object-fit: cover;
     transition: transform 0.75s ease;
 }
 
@@ -220,16 +226,17 @@ button a {
 
 .section-card-div-text {
     width: 100%;
+    margin-top: -15px;
+    padding-top: 10px;
     padding-bottom: 48px;
     background-color: white;
     overflow: hidden;
-    z-index: 1000;
+    position: relative;
 }
 
 .section-card h3 {
-    font-size: 36px;
-    padding-top: 10px;
     margin-bottom: 10px;
+    font-size: 36px;
 }
 
 .blue-underline {
@@ -271,7 +278,8 @@ button a {
 
 
 #section-contact h3, #nosotros-section-contact-content h3 {
-    font-size: 36px;
+    margin-top: 28px;
+    font-size: 42px;
 }
 
 #section-contact ol, p, 
@@ -282,6 +290,7 @@ button a {
     font-size: 20px;
     list-style-type: none;
     padding: 0;
+    color: rgb(39, 39, 39);;
 }
 
 .span-days {
@@ -404,7 +413,7 @@ footer hr {
     font-size: 16px;
 }
 
-#section-menu, #section-nosotros {
+#section-menu, #section-nosotros, #section-contact-contact-page {
     margin: 0 auto;
 }
 
@@ -427,6 +436,7 @@ footer hr {
 #section-menu-div-menus-wrap {
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 60px;
     text-align: center;
 }
 
@@ -465,13 +475,16 @@ footer hr {
     background-color: #1d56bf;
 }
 
-#section-menu-div-bottom {
+.common-section {
     width: 100%;
-    margin: 0 auto;
-    margin-top: -240px;
     padding-top: 80px;
     padding-bottom: 80px;
     background-color: white;
+}
+
+#section-menu-div-bottom {
+    margin: 0 auto;
+    margin-top: -240px;
 }
 
 .menu-section {
@@ -481,7 +494,8 @@ footer hr {
 }
 
 .menu-section h3, #section-nosotros h3, 
-#section-galeria-div-bottom h3 {
+#section-galeria-div-bottom h3, #contact-main-div-bottom h3 {
+    margin-top: 24px;
     margin-bottom: 2px;
     font-size: 48px;
 }
@@ -512,9 +526,6 @@ footer hr {
 #nosotros-main-div-bottom {
     width: 100%;
     margin-top: -220px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    background-color: white;
 }
 
 #nosotros-main-div-bottom-content {
@@ -566,7 +577,7 @@ footer hr {
 
 .small-title {
     font-family: "Antonio", sans-serif;
-    margin-bottom: -24px;
+    margin-bottom: -32px;
     font-size: 24px;
     text-align: left;
 }
@@ -577,12 +588,10 @@ footer hr {
 }
 
 #section-galeria-div-bottom {
-    width: 100%;
     margin: 0 auto;
     margin-top: -240px;
     padding-top: 64px;
     padding-bottom: 120px;
-    background-color: white;
 }
 
 #div-galeria {
@@ -613,6 +622,58 @@ footer hr {
     background-color: white;
 }
 
-#galeria-section-ver-menu-completo .blue-button {
-    font-size: 48px;
+#contact-main-div-top {
+    margin-bottom: -60px;
+}
+
+#contact-main-div-bottom {
+    margin-top: -120px;
+    padding-bottom: 160px;
+    text-align: left;
+}
+
+#contact-main-div-bottom-text {
+    width: 40%;
+    margin: 0 auto;
+}
+
+#contact-main-div-bottom-text p {
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+form {
+    margin-top: 48px;
+}
+
+form, textarea {
+    font-family: "Antonio", sans-serif;
+}
+
+.form-div-subject {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form-div-subject label {
+    margin-bottom: 4px;
+}
+
+.form-div-subject input {
+    height: 36px;
+    font-size: 16px;
+    margin-top: 4px;
+}
+
+.form-div-subject textarea {
+    height: 144px;
+    font-size: 16px;
+}
+
+#div-contact-form-button {
+    text-align: right;
 }
