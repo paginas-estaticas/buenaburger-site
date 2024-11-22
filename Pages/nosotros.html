@@ -7,7 +7,7 @@
         <meta name="description" content="Conocé las auténticas hamburguesas y milangas desde el sur BONABURGUENSE en Almirante Brown 668, Quilmes, Buenos Aires 1878.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Citronov WebSites">
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../responsive-style.css">
         <link rel="icon" href="../Images/favicon.ico" type="image/x-icon">
     </head>
     <body>
@@ -16,10 +16,17 @@
                 <h1>
                 BONABURGUENSE. BURGAS Y MILANGAS
                 </h1>
-                <a href="index.html">
-                    <img id="header-logo" src="../Images/logo-bonaburguense-1.png" alt="BONABURGUENSE. BURGAS Y MILANGAS logo">
-                </a>
-                <nav>
+                <div id="header-top">
+                    <a href="index.html">
+                        <img id="header-logo" src="../Images/logo-bonaburguense-1.png" alt="BONABURGUENSE. BURGAS Y MILANGAS logo">
+                    </a>
+                    <div id="hamburguer-menu-icon">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+                <nav id="header-nav">
                     <ul>
                         <li><a class="nav-li-element" href="index.html">Hacé tu pedido</a></li>
                         <li><a class="nav-li-element" href="menu.html">Menú</a></li>
@@ -36,15 +43,17 @@
                     <h2><span class="blue-underline">NOSOTROS</span></h2>
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L120,69.3C240,75,480,85,720,80C960,75,1200,53,1320,42.7L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
-                <div id="nosotros-main-div-bottom" class="common-section">
+                <div id="nosotros-main-div-bottom" class="common-section-white-bg">
                     <div id="nosotros-main-div-bottom-content">
                         <div id="nosotros-main-div-bottom-div-text">
-                            <h2 class="small-title"><span class="blue-text antonio-font-text">Conocenos</span></h2>
+                            <h2 class="small-title"><span class="blue-text">Conocenos</span></h2>
                             <h3>Nuestra Inspiración y Espíritu</h3>
-                            <span class="grey-text">
-                                <p>En nuestra hamburguesería, la inspiración surge de la vibrante cultura porteña, donde cada esquina cuenta una historia y cada encuentro es una celebración. Nos apasiona la comida como un puente que une a las personas, y por eso hemos decidido crear hamburguesas smash que capturan la esencia de nuestra ciudad: simples, pero llenas de sabor y carácter.</p>
-                                <p>Nuestro espíritu se basa en la autenticidad y la creatividad. Cada hamburguesa es elaborada con ingredientes frescos y locales, buscando siempre la mejor calidad. Creemos en un enfoque artesanal, donde cada detalle cuenta y donde el amor por lo que hacemos se refleja en cada bocado. Queremos que cada visita sea una experiencia memorable, un momento para compartir y disfrutar en un ambiente cálido y acogedor.</p>                               
-                            </span>
+                            <div id="nosotros-div-text">
+                                <span class="grey-text">
+                                    <p>En nuestra hamburguesería, la inspiración surge de la vibrante cultura porteña, donde cada esquina cuenta una historia y cada encuentro es una celebración. Nos apasiona la comida como un puente que une a las personas, y por eso hemos decidido crear hamburguesas smash que capturan la esencia de nuestra ciudad: simples, pero llenas de sabor y carácter.</p>
+                                    <p>Nuestro espíritu se basa en la autenticidad y la creatividad. Cada hamburguesa es elaborada con ingredientes frescos y locales, buscando siempre la mejor calidad. Creemos en un enfoque artesanal, donde cada detalle cuenta y donde el amor por lo que hacemos se refleja en cada bocado. Queremos que cada visita sea una experiencia memorable, un momento para compartir y disfrutar en un ambiente cálido y acogedor.</p>                               
+                                </span>
+                            </div>
                         </div>
                         <div id="nosotros-main-div-bottom-div-image">
                             <img class="blue-bottom-border-img" src="../Images/bonaburguense-facade-2.jpeg" alt="Local de BONABURGUENSE">
@@ -52,21 +61,11 @@
                     </div>
                 </div>
             </section>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,96L120,101.3C240,107,480,117,720,101.3C960,85,1200,43,1320,21.3L1440,0L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
-            <section id="nosotros-section-hacer-pedido">
-                <h2>Andás con hambre?</h2>
-                <p><span class="grey-text">Si querés disfrutar de lo mejor sin moverte del sillón, hacé tu pedido online y recibí la auténtica cocina BONABURGUENSE desde la comodidad de tu casa.</span></p>
-                    <button id="section-hace-tu-pedido-button" class="blue-button"><a>
-                        <span class="button-text">HACER PEDIDO</span>
-                        <img class="button-arrow" src="../Images/arrow.svg" alt="Flecha">
-                    </a></button>
-            </section>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,256L120,261.3C240,267,480,277,720,272C960,267,1200,245,1320,234.7L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
-            <section id="nosotros-section-contact">
-                <div id="nosotros-section-contact-content">
+            <section class="common-section-white-bg">
+                <div>
                     <h2 class="small-title"><span class="blue-text antonio-font-text">Contacto</span></h2>
                     <div id="nosotros-section-contact-content-bottom">
-                        <div>
+                        <div id="div-nosotros-horarios">
                             <h3><span class="blue-underline">Horarios</span></h3>
                             <ol>
                                 <li><span class="span-days">Martes:</span><span class="grey-text"> 12-3 PM y 8-11:30 PM</span></li>
@@ -78,7 +77,7 @@
                                 <li><span class="span-days">Lunes:</span><span class="grey-text"> Cerrado</span></li>
                             </ol>
                         </div>
-                        <div>
+                        <div id="div-nosotros-direccion">
                             <h3><span class="blue-underline">Dirección</span></h3>
                             <p><span class="grey-text">Almirante Brown 668, Quilmes, Buenos Aires 1878</span></p>
                         </div>
@@ -97,18 +96,22 @@
                         <li>Almirante Brown 668, Quilmes</li>
                     </ul>
                 </div>
-                <div id="footer-div-top-informacion" class="footer-section">
+                <div id="footer-div-top-information" class="footer-section">
                     <h4>Información</h4>
                     <ul>
                         <li><a href="index.html">Página principal</a></li>
-                        <li><a href="#">Nosotros</a></li>
-                        <li><a href="#">Menú</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="menu.html">Menú</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
                     </ul>
                 </div>
                 <div id="footer-top-seguinos" class="footer-section">
-                    <h4>Seguinos en Instagram</h4>
+                    <h4>Seguinos en nuestras redes sociales</h4>
                     <ul>
-                        <li><a href="#"><img id="footer-div-top-img-instagram" src="../Images/Instagram.svg"></a></li>
+                        <li><a href="#"><img src="../Images/Instagram.svg"></a></li>
+                        <li><a href="#"><img src="../Images/Instagram.svg"></a></li>
+                        <li><a href="#"><img src="../Images/Instagram.svg"></a></li>
                     </ul>
                 </div>
             </div>
@@ -116,4 +119,5 @@
             <p id="footer-p-copyright">© Copyright 2023 - Designed & Developed By D.W. Citronovich</p>
         </footer>
     </body>
+    <script src="../Scripts/hamburgerMenu.js"></script>
 </html>
