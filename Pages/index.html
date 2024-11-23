@@ -16,37 +16,48 @@
                 <h1>
                 BONABURGUENSE. BURGAS Y MILANGAS
                 </h1>
-                <a href="index.html">
-                    <img id="header-logo" src="../Images/logo-bonaburguense-1.png" alt="BONABURGUENSE. BURGAS Y MILANGAS logo">
-                </a>
-                <nav>
+                <div id="header-top">
+                    <a href="index.html">
+                        <img id="header-logo" src="../Images/logo-bonaburguense-1.png" alt="BONABURGUENSE. BURGAS Y MILANGAS logo">
+                    </a>
+                    <div id="hamburguer-menu-icon">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+                <nav id="header-nav">
                     <ul>
                         <li><a class="nav-li-element" href="index.html">Hacé tu pedido</a></li>
                         <li><a class="nav-li-element" href="menu.html">Menú</a></li>
                         <li><a class="nav-li-element" href="nosotros.html">Nosotros</a></li>
                         <li><a class="nav-li-element" href="galeria.html">Galería</a></li>
-                        <li><a class="nav-li-element" href="#">Contacto</a></li>
+                        <li><a class="nav-li-element" href="contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <main>
-            <section id="main-section-statement">
-                <div id="main-section-statement-div">
-                    <div id="main-section-statement-div-left">
+        <main id="home-main">
+            <section id="section-statement">
+                    <div class="top-page-div">
                         <h2>Vení y encontrá la <span class="blue-text">BURGA</span> que estás buscando.</h2>
-                        <p><span>Conocé las mejores HAMBURGUESAS SMASH: carne aplastada contra la plancha caliente mientras se cocina, lo que le da un sabor y textura únicos.</p>
-                        <button id="main-section-statement-button" class="blue-button" type="button"><a href="menu.html">
-                            <span class="button-text">VER MENÚ</span>
-                            <img class="button-arrow" src="../Images/arrow.svg" alt="Flecha">
-                        </a></button>
+                        <p class="section-div-text">Conocé las mejores HAMBURGUESAS SMASH: carne aplastada contra la plancha caliente mientras se cocina, lo que le da un sabor y textura únicos.</p>
+                        <button id="main-section-statement-button" class="blue-button" type="button">
+                            <a href="menu.html">
+                                <span class="button-text">VER MENÚ</span>
+                                <img class="button-arrow" src="../Images/arrow.svg" alt="Flecha">
+                            </a>
+                        </button>
                     </div>
-                    <img id="main-section-statement-img" src="../Images/burga-image-2.png">
-                </div>
+                    <img id="section-statement-img" src="../Images/burga-image-2.png">
             </section>
             <svg id="section-cards-svg-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L80,80C160,96,320,128,480,128C640,128,800,96,960,80C1120,64,1280,64,1360,64L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
-            <section id="section-cards">
-                <h2>Conocé nuestras especialidades y disfruta el verdadero sabor <span class="blue-text">BONABURGUENSE</span>.</h2>
+            <section id="section-cards" class="common-section-white-bg">
+                <h2 class="small-title"><span class="blue-text">Nuestras especialidades</span></h2>
+                <h3>AUNTENTICA COCINA PORTEÑA</h3>
+                <div class="section-div-text">
+                    <p>Preparadas con ingredientes frescos y de primera calidad. Ofrecemos opciones únicas que combinan lo clásico con lo innovador, garantizando una experiencia deliciosa en cada plato.</p>
+                </div>
                 <div id="section-cards-div">
                     <div class="section-card">
                         <a href="index.html">
@@ -55,7 +66,9 @@
                             </div>
                             <div class="section-card-div-text">
                                 <h3><span class="blue-underline">BURGAS</span></h3>
-                                <p>Una verdadera hamburguesa smash hecha a la plancha, creando una corteza dorada y crujiente que encierra un corazón jugoso. Hecha con carne de res de la mejor calidad, cada bocado es una explosión de sabor.</p>
+                                <div class="section-div-text">
+                                    <p>Una verdadera hamburguesa smash hecha a la plancha, creando una corteza dorada y crujiente que encierra un corazón jugoso. Hecha con carne de res de la mejor calidad, cada bocado es una explosión de sabor.</p>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -66,7 +79,9 @@
                             </div>
                             <div class="section-card-div-text">
                                 <h3><span class="blue-underline">MILANGAS</span></h3>
-                                <p>Sanguche de milanesa artesanal que lleva la tradición a otro nivel. Preparada con carne de res de alta calidad, servida en un pan suave y esponjoso, logrando una corteza dorada y crujiente que resalta el sabor jugoso de la carne.</p>
+                                <div class="section-div-text">
+                                    <p>Sanguche de milanesa artesanal que lleva la tradición a otro nivel. Preparada con carne de res de alta calidad, servida en un pan suave y esponjoso, logrando una corteza dorada y crujiente que resalta el sabor jugoso de la carne.</p>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -77,14 +92,16 @@
                             </div>
                             <div class="section-card-div-text">
                                 <h3><span class="blue-underline">DIPS</span></h3>
-                                <p>Cada uno de sus dips es una obra maestra que combina ingredientes frescos y de calidad, logrando texturas cremosas y sabrosas que se deslizan con facilidad sobre pan, galletas o vegetales.</p>
+                                <div class="section-div-text"> 
+                                    <p>Cada uno de sus dips es una obra maestra que combina ingredientes frescos y de calidad, logrando texturas cremosas y sabrosas que se deslizan con facilidad sobre pan, galletas o vegetales.</p>
+                                </div>
                             </div>
                         </a>
                     </div>
                 </div>
             </section>
             <svg id="section-cards-svg-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L80,165.3C160,171,320,181,480,176C640,171,800,149,960,133.3C1120,117,1280,107,1360,101.3L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
-            <section id="section-hace-tu-pedido">
+            <section id="home-section-hace-tu-pedido" class="common-section">
                 <div id="section-hace-tu-pedido-div-content">
                     <h2>VIVÍ UNA EXPERIENCIA <span class="blue-text">BONA</span></h2>
                     <p><span class="grey-text">Si querés disfrutar de lo mejor sin moverte del sillón, hacé tu pedido online y recibí la auténtica cocina BONABURGUENSE desde la comodidad de tu casa.</span></p>
@@ -95,9 +112,9 @@
                 </div>
             </section>
             <svg id="section-contact-svg-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,0L80,5.3C160,11,320,21,480,37.3C640,53,800,75,960,74.7C1120,75,1280,53,1360,42.7L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
-            <section id="section-contact">
+            <section id="section-contact" class="common-section-white-bg">
                 <div id="section-contact-top">
-                    <div id="section-contact-div-left">
+                    <div id="home-section-contact-div-text">
                         <h2 class="small-title"><span class="blue-text">Contacto</span></h2>
                         <h3><span class="blue-underline">Horarios</span></h3>
                         <ol>
@@ -119,9 +136,7 @@
         </main>
         <footer>
             <div id="footer-div-top">
-                <a id="footer-a-logo" href="index.html">
-                    <img id="footer-div-top-logo" src="../Images/logo-bonaburguense-1.png" alt="Logo de BONABURGUENSE">
-                </a>                
+                <img id="footer-div-top-logo" src="../Images/logo-bonaburguense-1.png" alt="Logo de BONABURGUENSE">
                 <div id="footer-div-top-contacto" class="footer-section">
                     <h4>Contacto</h4>
                     <ul>
@@ -129,19 +144,22 @@
                         <li>Almirante Brown 668, Quilmes</li>
                     </ul>
                 </div>
-                <div id="footer-div-top-informacion" class="footer-section">
+                <div id="footer-div-top-information" class="footer-section">
                     <h4>Información</h4>
                     <ul>
                         <li><a href="index.html">Página principal</a></li>
                         <li><a href="nosotros.html">Nosotros</a></li>
                         <li><a href="menu.html">Menú</a></li>
                         <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
                     </ul>
                 </div>
                 <div id="footer-top-seguinos" class="footer-section">
-                    <h4>Seguinos en Instagram</h4>
+                    <h4>Seguinos en nuestras redes sociales</h4>
                     <ul>
-                        <li><a href="#"><img id="footer-div-top-img-instagram" src="../Images/Instagram.svg"></a></li>
+                        <li><a href="#"><img src="../Images/Instagram.svg"></a></li>
+                        <li><a href="#"><img src="../Images/Instagram.svg"></a></li>
+                        <li><a href="#"><img src="../Images/Instagram.svg"></a></li>
                     </ul>
                 </div>
             </div>
@@ -149,4 +167,5 @@
             <p id="footer-p-copyright">© Copyright 2023 - Designed & Developed By D.W. Citronovich</p>
         </footer>
     </body>
+    <script src="../Scripts/hamburgerMenu.js"></script>
 </html>

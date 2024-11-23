@@ -16,10 +16,17 @@
                 <h1>
                 BONABURGUENSE. BURGAS Y MILANGAS
                 </h1>
-                <a href="index.html">
-                    <img id="header-logo" src="../Images/logo-bonaburguense-1.png" alt="BONABURGUENSE. BURGAS Y MILANGAS logo">
-                </a>
-                <nav>
+                <div id="header-top">
+                    <a href="index.html">
+                        <img id="header-logo" src="../Images/logo-bonaburguense-1.png" alt="BONABURGUENSE. BURGAS Y MILANGAS logo">
+                    </a>
+                    <div id="hamburguer-menu-icon">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+                <nav id="header-nav">
                     <ul>
                         <li><a class="nav-li-element" href="index.html">Hacé tu pedido</a></li>
                         <li><a class="nav-li-element" href="menu.html">Menú</a></li>
@@ -36,8 +43,12 @@
                     <h2><span class="blue-underline">GALERÍA</span></h2>
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,96L120,96C240,96,480,96,720,90.7C960,85,1200,75,1320,69.3L1440,64L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
-                <div id="section-galeria-div-bottom" class="common-section">
-                    <h3>Explorá nuestra <span class="blue-text">increíble</span> galería</h3>
+                <div id="section-galeria-div-bottom" class="common-section-white-bg">
+                    <h2 class="small-title"><span class="blue-text antonio-font-text">Conocé</span></h2>
+                    <h3>Explorá nuestra increíble galería</h3>
+                    <div class="section-div-text">
+                        <p>Descubrí las deliciosas creaciones que hacen única a nuestra hamburguesería.</p>
+                    </div>
                     <div id="div-galeria">
                         <div class="div-galeria-column">
                             <img src="../Images/hamburguesa-1.jpg" alt="Hamburguesa">
@@ -61,14 +72,17 @@
                             <img src="../Images/hamburguesa-15.jpg" alt="Hamburguesa">
                         </div>
                     </div>
+                    <div id="galeria-div-button-ver-menu">
+                        <button class="blue-button" type="button">
+                            <a href="menu.html">
+                                <span class="button-text">VER MENÚ COMPLETO</span>
+                                <img class="button-arrow" src="../Images/arrow.svg" alt="Flecha">
+                            </a>
+                        </button>
+                    </div>
                 </div>
             </section>
-            <section id="galeria-section-ver-menu-completo">
-                <button class="blue-button" type="button"><a href="menu.html">
-                    <span class="button-text">VER MENÚ COMPLETO</span>
-                    <img class="button-arrow" src="../Images/arrow.svg" alt="Flecha">
-                </a></button>
-            </section>
+            <div class="page-bottom-padding-white"></div>
         </main>
         <footer>
             <div id="footer-div-top">
@@ -80,18 +94,22 @@
                         <li>Almirante Brown 668, Quilmes</li>
                     </ul>
                 </div>
-                <div id="footer-div-top-informacion" class="footer-section">
+                <div id="footer-div-top-information" class="footer-section">
                     <h4>Información</h4>
                     <ul>
                         <li><a href="index.html">Página principal</a></li>
-                        <li><a href="#">Nosotros</a></li>
-                        <li><a href="#">Menú</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="menu.html">Menú</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
                     </ul>
                 </div>
                 <div id="footer-top-seguinos" class="footer-section">
-                    <h4>Seguinos en Instagram</h4>
+                    <h4>Seguinos en nuestras redes sociales</h4>
                     <ul>
-                        <li><a href="#"><img id="footer-div-top-img-instagram" src="../Images/Instagram.svg"></a></li>
+                        <li><a href="#"><img src="../Images/Instagram.svg"></a></li>
+                        <li><a href="#"><img src="../Images/Instagram.svg"></a></li>
+                        <li><a href="#"><img src="../Images/Instagram.svg"></a></li>
                     </ul>
                 </div>
             </div>
@@ -99,4 +117,5 @@
             <p id="footer-p-copyright">© Copyright 2023 - Designed & Developed By D.W. Citronovich</p>
         </footer>
     </body>
+    <script src="../Scripts/hamburgerMenu.js"></script>
 </html>
