@@ -1,11 +1,10 @@
 @font-face {
-    font-family: "Anton";
-    src: url("/Fuentes/anton/Anton.ttf") format(ttf);
-}
-
-@font-face {
-    font-family: "Antonio";
-    src: url("/Fuentes/antonio/Antonio-Bold.ttf") format(ttf);
+    font-family: "Anton SC Regular";
+    src: url("/Fuentes/Anton_SC/antonsc-regular-webfont.woff2") format("woff2"),
+        url("/Fuentes/Anton_SC/antonsc-regular-webfont.woff") format("woff"),
+        url("/Fuentes/Anton_SC/AntonSC-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
 
 li {
@@ -28,8 +27,8 @@ svg {
 }
 
 body {
-    font-family: "Anton", sans-serif;
-    font-weight: normal;
+    font-family: "Anton SC Regular", sans-serif;
+    font-weight: 400;
     width: 100%;
     height: 100vh;
     margin: 0;
@@ -155,11 +154,12 @@ main {
 }
 
 h2 {
-    font-family: "Anton", sans-serif;
-    font-size: 3rem;
+    font-family: "Anton SC Regular", sans-serif;
+    font-size: 2.5rem;
 }
 
 h3 {
+    font-family: "Anton SC Regular", sans-serif;
     font-size: 2rem;
 }
 
@@ -173,7 +173,7 @@ h3 {
 }
 
 p {
-    font-family: "Antonio", sans-serif;
+    font-family: sans-serif;
     font-size: 1rem;
 }
 
@@ -182,8 +182,9 @@ p {
 }
 
 .small-title {
-    font-family: "Antonio", sans-serif;
+    font-family: sans-serif;
     font-size: 1.2rem;
+    margin-bottom: 8px;
 }
 
 .top-page-div {
@@ -192,7 +193,7 @@ p {
 }
 
 .common-section, .common-section-white-bg {
-    font-family: "Antonio", sans-serif;
+    font-family: sans-serif;
     padding-top: 64px;
     padding-bottom: 24px;
     padding-left: 8%;
@@ -211,13 +212,16 @@ p {
     text-align: center;
 }
 
+#home-main .top-page-div {
+    padding-top: 96px;
+}
+
 #home-main section {
     padding-bottom: 64px;
 }
 
 #home-main h3 {
-    font-family: "Anton", sans-serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 #section-statement-img {
@@ -267,7 +271,6 @@ p {
 }
 
 #home-section-contact-div-text h3 {
-    font-family: "Antonio", sans-serif;
     font-size: 2rem;
     margin-bottom: 12px;
 }
@@ -302,6 +305,7 @@ p {
 
 .wrap-menu-item {
     display: inline-block;
+    cursor: pointer;
     margin: 0 auto;
     margin-top: 4px;
     margin-bottom: 4px;
@@ -365,6 +369,16 @@ p {
     transform: rotate(-45deg);
 }
 
+.menu-section {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.menu-item-li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 /* ============ NOSOTROS ============ */
 
 .section-div-text {
@@ -379,11 +393,11 @@ p {
 
 .blue-button {
     all: unset;
-    font-family: "Anton", sans-serif;
-    font-size: 1.5rem;
+    font-family: "Anton SC Regular", sans-serif;
+    font-size: 1.25rem;
     color: white;
     margin: 0 auto;
-    margin-top: 28px;
+    margin-top: 16px;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 28px;
@@ -405,7 +419,7 @@ button a {
 
 .button-arrow {
     width: 14px;
-    height: auto;
+    height: 20px;
     margin-left: 20px;
     animation: move 1s linear infinite;
 }
@@ -485,7 +499,7 @@ button a {
 }
 
 .form-div-subject textarea {
-    font-family: "Antonio", sans-serif;
+    font-family: sans-serif;
     height: 144px;
     font-size: 16px;
 }
@@ -497,7 +511,7 @@ button a {
 /* ============ FOOTER ============ */
 
 footer {
-    font-family: "Antonio", sans-serif;
+    font-family: sans-serif;
     color: white;
     width: 100%;
     padding-top: 80px;
