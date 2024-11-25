@@ -1,8 +1,8 @@
 @font-face {
     font-family: "Anton SC Regular";
-    src: url("/Fuentes/Anton_SC/antonsc-regular-webfont.woff2") format("woff2"),
-        url("/Fuentes/Anton_SC/antonsc-regular-webfont.woff") format("woff"),
-        url("/Fuentes/Anton_SC/AntonSC-Regular.ttf") format("truetype");
+    src: url("Fuentes/Anton_SC/antonsc-regular-webfont.woff2") format("woff2"),
+        url("Fuentes/Anton_SC/antonsc-regular-webfont.woff") format("woff"),
+        url("Fuentes/Anton_SC/AntonSC-Regular.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
@@ -161,6 +161,7 @@ h2 {
 h3 {
     font-family: "Anton SC Regular", sans-serif;
     font-size: 2rem;
+    line-height: 1.125;
 }
 
 .blue-underline {
@@ -218,6 +219,10 @@ p {
 
 #home-main section {
     padding-bottom: 64px;
+}
+
+#home-main h2 {
+    line-height: 1.125;
 }
 
 #home-main h3 {
@@ -398,7 +403,7 @@ p {
     color: white;
     margin: 0 auto;
     margin-top: 16px;
-    padding-top: 12px;
+    padding-top: 17px;
     padding-bottom: 12px;
     padding-left: 28px;
     padding-right: 28px;
@@ -419,8 +424,8 @@ button a {
 
 .button-arrow {
     width: 14px;
-    height: 20px;
-    margin-left: 20px;
+    height: 19px;
+    margin-left: 12px;
     animation: move 1s linear infinite;
 }
 
@@ -479,6 +484,10 @@ button a {
 
 /* ============ CONTACTO ============ */
 
+#contact-form {
+    margin-top: 64px;
+}
+
 .form-div-subject {
     display: flex;
     flex-direction: column;
@@ -506,6 +515,28 @@ button a {
 
 #div-contact-form-button {
     text-align: right;
+}
+
+#contact-options {
+    margin-top: 36px;
+    margin-bottom: 64px;
+}
+
+.contact-option {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+}
+
+.contact-option img, .contact-option svg {
+    display: block;
+    height: 24px;
+    width: auto;
+    margin-right: 8px;
+}
+
+.contact-option p {
+    font-size: 1rem;
 }
 
 /* ============ FOOTER ============ */
@@ -579,4 +610,203 @@ footer hr {
 
 #footer-p-copyright {
     color: white;
+}
+
+/* ===== DESKTOP ==== */
+
+@media (min-width: 960px) {
+    svg {
+        display: block;
+    }
+
+    #header-div {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding-top: 40px;
+        padding-bottom: 36px;
+        font-size: 1rem;
+    }
+
+    #header-logo {
+        width: 96px;
+    }
+
+    #hamburguer-menu-icon {
+        display: none;
+    }
+
+    nav {
+        width: auto;
+        position: inherit;
+        top: 0;
+        left: 0;
+        box-shadow: none;
+        transition: none;
+        transform: none;
+    }
+
+    nav ul {
+        flex-direction: row;
+        margin: 0 auto;
+        gap: 36px;
+    }
+
+    .nav-li-element {
+        background: 
+           linear-gradient(currentColor 0 0) 
+           var(--d, 201%) 100% /200% 3px 
+           no-repeat;
+      }
+      
+    .nav-li-element:hover {
+        --d: -101%;
+        transition: 0.75s
+    }
+
+    nav ul a {
+        font-size: 1.125rem;
+    }
+
+    h2 {
+        font-size: 3.8125rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    #section-statement {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .top-page-div {
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .blue-button {
+        font-size: 1.5rem;
+    }
+
+
+    .button-arrow {
+        height: 22px;
+    }
+
+    p {
+        font-size: 1.25rem;
+    }
+
+    .small-title {
+        font-size: 1.5rem;
+        margin-bottom: 16px;
+    }
+
+    .iframe-maps-ubication {
+        width: 100%;
+    }
+
+    #footer-div-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    #footer-div-top-logo {
+        width: 144px;
+        height: auto;
+        align-self: start;
+    }
+
+    .footer-section {
+        margin-top: 0;
+    }
+
+    #footer-div-top-information ul {
+        max-width: 100%;
+        display: block;
+    }
+
+    #footer-div-top-information li {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    #footer-p-copyright {
+        text-align: center;
+        font-size: .875rem;
+        margin-top: 32px;
+    }
+
+    /* ==== INDEX ==== */
+
+    #home-main #section-statement {
+        padding-bottom: 0;
+    }
+
+    #home-main .top-page-div {
+        padding-top: 0;
+    }
+
+    #home-main h3 {
+        font-size: 3rem;
+    }
+
+    #section-cards-svg-top {
+        margin-bottom: -130px;
+    }
+
+    #section-cards-div {
+        display: flex;
+        justify-content: space-between;
+        gap: 4%;
+        margin: 0 auto;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    #section-cards .section-div-text {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 16px;
+    }
+
+    #section-cards .section-card-div-text h3 {
+        font-size: 2.25rem;
+        padding-top: 16px;
+    }
+
+    #section-cards .section-div-text p {
+        font-size: 1rem;
+    }
+
+    #section-cards-svg-bottom {
+        margin-top: -85px;
+    }
+
+    #section-contact-svg-top {
+        margin-bottom: -240px;
+    }
+
+
+
+    #section-contact-top {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    #section-contact-img-hamburgueseria {
+        width: 450px;
+        position: relative;
+        margin-top: -40px;
+        z-index: 1;
+    }
 }
