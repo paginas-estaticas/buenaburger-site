@@ -42,123 +42,125 @@
                 <div id="section-menu-div-top" class="top-page-div">
                     <h2><span class="blue-underline">Menú</span></h2>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L120,58.7C240,53,480,43,720,37.3C960,32,1200,32,1320,32L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+                <svg id="section-div-bottom-svg-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L120,69.3C240,75,480,85,720,80C960,75,1200,53,1320,42.7L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
                 <div id="section-menu-div-bottom" class="common-section-white-bg">
-                    <div id="section-menu-div-menus-wrap">
+                    <div class="common-section-content-div">
+                        <div id="section-menu-div-menus-wrap">
+                            <ul>
+                                <li class="wrap-menu-item" class="selected-wrap-menu-item">BURGERS</li>
+                                <li class="wrap-menu-item">BURGERS CLÁSICAS</li>
+                                <li class="wrap-menu-item">ADEREZOS</li>
+                                <li class="wrap-menu-item">VEGGIES</li>
+                                <li class="wrap-menu-item">POSTRE</li>
+                                <li>
+                                    <button id="reset-wrap-menu">
+                                        <span class="reset-wrap-menu-bar"></span>
+                                        <span class="reset-wrap-menu-bar"></span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
                         <ul>
-                            <li class="wrap-menu-item" class="selected-wrap-menu-item">BURGERS</li>
-                            <li class="wrap-menu-item">BURGERS CLÁSICAS</li>
-                            <li class="wrap-menu-item">ADEREZOS</li>
-                            <li class="wrap-menu-item">VEGGIES</li>
-                            <li class="wrap-menu-item">POSTRE</li>
-                            <li>
-                                <button id="reset-wrap-menu">
-                                    <span class="reset-wrap-menu-bar"></span>
-                                    <span class="reset-wrap-menu-bar"></span>
-                                </button>
-                            </li>
+                            <div id="menu-section-burgers" class="menu-section">
+                                <h3>Burgers</h3>
+                                <hr>
+                                <ul>
+                                    <li class="menu-item-li">
+                                        <h4>BURGER PORTEÑA</h4>
+                                        <p class="menu-item-description">Clásica hamburguesa solo con queso. Pan de papa, carne, cheddar. Sin aderezos. Sale con fritas y para tomar.</p>
+                                    </li>
+                                    <li class="menu-item-li">
+                                        <h4>BURGER OBELISCO</h4>
+                                        <p class="menu-item-description">Doble carne, cebolla caramelizada, provolone fundido y una salsa especial de chimichurri. Pan de papa. Sale con fritas y bebida.</p>
+                                    </li>
+                                    <li class="menu-item-li">
+                                        <h4>BURGER PALERMO</h4>
+                                        <p class="menu-item-description">Hamburguesa gourmet con bacon crocante, tomate fresco, rúcula y mayonesa de mostaza. Pan brioche. Sale con fritas y para tomar.</p>
+                                    </li>
+                                    <li class="menu-item-li">
+                                        <h4>FULL BONDI</h4>
+                                        <p class="menu-item-description">Una bomba de sabor: doble carne, bacon crocante, cebolla caramelizada, provolone fundido y salsa criolla. Todo entre pan de papa, con un toque de mayonesa de ajo y servida con una generosa porción de papas fritas y bebida.</p>
+                                    </li>
+                                    <li class="menu-item-li">
+                                        <h4>BURGER SAN TELMO</h4>
+                                        <p class="menu-item-description">Hamburguesa con carne de primera, huevo frito, cebolla morada, aguacate y salsa de mostaza y miel. Pan brioche y papas fritas de acompañamiento.</p>
+                                    </li>
+                                    <li class="menu-item-li">
+                                        <h4>BURGER QUERIDA</h4>
+                                        <p class="menu-item-description">Hamburguesa clásica con carne jugosa, cheddar, bacon crocante, tomate fresco y mayonesa casera. Pan de papa y papas fritas.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="menu-section-milangas" class="menu-section">
+                                <h3>Milangas</h3>
+                                <hr>
+                                <ul>
+                                    <li class="menu-item-li">
+                                        <h4>MILANGA CLÁSICA</h4>
+                                        <p class="menu-item-description">Clásica milanesa de carne empanada, lechuga, tomate y mayonesa, todo en pan de miga. Sale con fritas y bebida.</p>
+                                    </li>
+                                    <li class="menu-item-li">
+                                        <h4>MILANGA AL PASO</h4>
+                                        <p class="menu-item-description">Milanesa de pollo, jamón, queso y salsa golf. Pan de miga con tomate y lechuga. ¡Ideal para comer rápido pero bien! Sale con fritas y para tomar.</p>
+                                    </li>
+                                    <li class="menu-item-li">
+                                        <h4>MILANGA CON FRITAS</h4>
+                                        <p class="menu-item-description">Milanesa de ternera, huevo frito, salsa criolla, cebollas y un toque de mayonesa casera. Pan de miga. Sale con fritas y bebida.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="menu-section-aderezos" class="menu-section">
+                                <h3>Aderezos</h3>
+                                <hr>
+                                <ul>
+                                    <li class="menu-item-li">
+                                        <h4>CHIMI CASERO</h4>
+                                        <p class="menu-item-description">Salsa de chimichurri artesanal.</p>
+                                    </li>
+                                    <li class="menu-item-li">
+                                        <h4>MAYO DE AJO</h4>
+                                        <p class="menu-item-description">Mayonesa casera con un toque de ajo.</p>
+                                    </li>
+                                    <li class="menu-item-li">
+                                        <h4>SALSA BARBACOA CRIOLLA</h4>
+                                        <p class="menu-item-description">Barbacoa al estilo local, dulce y ahumada.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="menu-section-veggies" class="menu-section">
+                                <h3>Veggies</h3>
+                                <hr>
+                                <ul>
+                                    <li class="menu-item-li">
+                                        <h4>VEGGIE PORTEÑA</h4>
+                                        <p class="menu-item-description">Hamburguesa vegetariana con pan de papa, patty de lentejas, tomate, cebolla y mayonesa vegana. Sale con fritas y bebida.</p>
+                                    </li>
+                                    <li class="menu-item-li">
+                                        <h4>VEGGIE OBELISCO</h4>
+                                        <p class="menu-item-description">Hamburguesa vegana con patty de garbanzos y especias, cebolla morada caramelizada, espinaca fresca y una salsa de tahini con limón. Todo entre pan de papa. Sale con fritas y bebida.</p>
+                                    </li>
+                                    <li class="menu-item-li">
+                                        <h4>VEGGIE FULL BONDI</h4>
+                                        <p class="menu-item-description">Paté de garbanzo, lechuga, tomate, cebolla morada y salsa de mostaza y miel. Pan casero. Sale con fritas y para tomar.</p>
+                                    </li>
+                                    <li class="menu-item-li">
+                                        <h4>VEGGIE PALERMO</h4>
+                                        <p class="menu-item-description">Hamburguesa de quinoa y vegetales, con guacamole, tomate fresco y cebolla morada. Pan brioche. Sale con fritas y bebida.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="menu-section-postres" class="menu-section">
+                                <h3>Postres</h3>
+                                <hr>
+                                <ul>
+                                    <li class="menu-item-li">
+                                        <h4>CHOCOTORTA PORTEÑA</h4>
+                                        <p class="menu-item-description">El clásico argentino con capas de galletitas de chocolate y dulce de leche.</p>
+                                    </li>
+                                </ul>
+                            </div>                        
                         </ul>
                     </div>
-                    <ul>
-                        <div id="menu-section-burgers" class="menu-section">
-                            <h3>Burgers</h3>
-                            <hr>
-                            <ul>
-                                <li class="menu-item-li">
-                                    <h4>BURGER PORTEÑA</h4>
-                                    <p class="menu-item-description">Clásica hamburguesa solo con queso. Pan de papa, carne, cheddar. Sin aderezos. Sale con fritas y para tomar.</p>
-                                </li>
-                                <li class="menu-item-li">
-                                    <h4>BURGER OBELISCO</h4>
-                                    <p class="menu-item-description">Doble carne, cebolla caramelizada, provolone fundido y una salsa especial de chimichurri. Pan de papa. Sale con fritas y bebida.</p>
-                                </li>
-                                <li class="menu-item-li">
-                                    <h4>BURGER PALERMO</h4>
-                                    <p class="menu-item-description">Hamburguesa gourmet con bacon crocante, tomate fresco, rúcula y mayonesa de mostaza. Pan brioche. Sale con fritas y para tomar.</p>
-                                </li>
-                                <li class="menu-item-li">
-                                    <h4>FULL BONDI</h4>
-                                    <p class="menu-item-description">Una bomba de sabor: doble carne, bacon crocante, cebolla caramelizada, provolone fundido y salsa criolla. Todo entre pan de papa, con un toque de mayonesa de ajo y servida con una generosa porción de papas fritas y bebida.</p>
-                                </li>
-                                <li class="menu-item-li">
-                                    <h4>BURGER SAN TELMO</h4>
-                                    <p class="menu-item-description">Hamburguesa con carne de primera, huevo frito, cebolla morada, aguacate y salsa de mostaza y miel. Pan brioche y papas fritas de acompañamiento.</p>
-                                </li>
-                                <li class="menu-item-li">
-                                    <h4>BURGER QUERIDA</h4>
-                                    <p class="menu-item-description">Hamburguesa clásica con carne jugosa, cheddar, bacon crocante, tomate fresco y mayonesa casera. Pan de papa y papas fritas.</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="menu-section-milangas" class="menu-section">
-                            <h3>Milangas</h3>
-                            <hr>
-                            <ul>
-                                <li class="menu-item-li">
-                                    <h4>MILANGA CLÁSICA</h4>
-                                    <p class="menu-item-description">Clásica milanesa de carne empanada, lechuga, tomate y mayonesa, todo en pan de miga. Sale con fritas y bebida.</p>
-                                </li>
-                                <li class="menu-item-li">
-                                    <h4>MILANGA AL PASO</h4>
-                                    <p class="menu-item-description">Milanesa de pollo, jamón, queso y salsa golf. Pan de miga con tomate y lechuga. ¡Ideal para comer rápido pero bien! Sale con fritas y para tomar.</p>
-                                </li>
-                                <li class="menu-item-li">
-                                    <h4>MILANGA CON FRITAS</h4>
-                                    <p class="menu-item-description">Milanesa de ternera, huevo frito, salsa criolla, cebollas y un toque de mayonesa casera. Pan de miga. Sale con fritas y bebida.</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="menu-section-aderezos" class="menu-section">
-                            <h3>Aderezos</h3>
-                            <hr>
-                            <ul>
-                                <li class="menu-item-li">
-                                    <h4>CHIMI CASERO</h4>
-                                    <p class="menu-item-description">Salsa de chimichurri artesanal.</p>
-                                </li>
-                                <li class="menu-item-li">
-                                    <h4>MAYO DE AJO</h4>
-                                    <p class="menu-item-description">Mayonesa casera con un toque de ajo.</p>
-                                </li>
-                                <li class="menu-item-li">
-                                    <h4>SALSA BARBACOA CRIOLLA</h4>
-                                    <p class="menu-item-description">Barbacoa al estilo local, dulce y ahumada.</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="menu-section-veggies" class="menu-section">
-                            <h3>Veggies</h3>
-                            <hr>
-                            <ul>
-                                <li class="menu-item-li">
-                                    <h4>VEGGIE PORTEÑA</h4>
-                                    <p class="menu-item-description">Hamburguesa vegetariana con pan de papa, patty de lentejas, tomate, cebolla y mayonesa vegana. Sale con fritas y bebida.</p>
-                                </li>
-                                <li class="menu-item-li">
-                                    <h4>VEGGIE OBELISCO</h4>
-                                    <p class="menu-item-description">Hamburguesa vegana con patty de garbanzos y especias, cebolla morada caramelizada, espinaca fresca y una salsa de tahini con limón. Todo entre pan de papa. Sale con fritas y bebida.</p>
-                                </li>
-                                <li class="menu-item-li">
-                                    <h4>VEGGIE FULL BONDI</h4>
-                                    <p class="menu-item-description">Paté de garbanzo, lechuga, tomate, cebolla morada y salsa de mostaza y miel. Pan casero. Sale con fritas y para tomar.</p>
-                                </li>
-                                <li class="menu-item-li">
-                                    <h4>VEGGIE PALERMO</h4>
-                                    <p class="menu-item-description">Hamburguesa de quinoa y vegetales, con guacamole, tomate fresco y cebolla morada. Pan brioche. Sale con fritas y bebida.</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="menu-section-postres" class="menu-section">
-                            <h3>Postres</h3>
-                            <hr>
-                            <ul>
-                                <li class="menu-item-li">
-                                    <h4>CHOCOTORTA PORTEÑA</h4>
-                                    <p class="menu-item-description">El clásico argentino con capas de galletitas de chocolate y dulce de leche.</p>
-                                </li>
-                            </ul>
-                        </div>                        
-                    </ul>
                 </div>
             </section>
         </main>
