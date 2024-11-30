@@ -710,7 +710,7 @@ footer hr {
     }
 
     h2 {
-        font-size: clamp(2.4375rem, 5vw, 3.8125rem);;
+        font-size: clamp(2.4375rem, 5vw, 3.8125rem);
     }
 
     h3 {
@@ -727,7 +727,7 @@ footer hr {
     }
 
     .top-page-div {
-        margin-top: 6vh;
+        margin-top: 16vh;
         margin-bottom: -6vh;
     }
 
@@ -808,12 +808,14 @@ footer hr {
 
     #home-main #section-statement {
         margin-top: 4vh;
-        margin-bottom: -48px;
+        margin-bottom: -10vh;
         padding-bottom: 0;
     }
 
     #home-main .top-page-div {
         width: 52%;
+        margin-top: 0;
+        margin-bottom: 0;
         padding-top: 0;
         padding-bottom: 0;
         padding-left: 0;
@@ -830,6 +832,7 @@ footer hr {
     }
 
     #section-cards-svg-top {
+        margin-top: 3vh;
         margin-bottom: -12vh;
     }
 
@@ -954,5 +957,11 @@ footer hr {
         margin-top: 1vh;
         margin-bottom: 1vh;
         border-radius: 8px;
+    }
+
+    /* ==== CONTACTO ==== */
+
+    .contact-option p {
+        font-size: 1.25rem;
     }
 }
