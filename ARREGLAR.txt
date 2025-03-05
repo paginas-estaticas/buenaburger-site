@@ -1,0 +1,10 @@
+Arreglar:
+
+- Retocar imagenes => coherencia visual
+- Más brillo a la imagen de burger en statement
+- Más brillo a la imagen de fondo
+- Cambiar "hacer pedido" por "home" y agregar "active item"
+- Agregar icono nuevo
+- Footer:
+    - Gap entre links.
+    - Tamaño de los archivos svg

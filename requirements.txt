@@ -1,6 +1,0 @@
-- Title and slogan
-- Products and Services
-- Gallery
-- Business information
-- Contanct information
-- Location
