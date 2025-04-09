@@ -241,6 +241,10 @@ iframe {
     margin-bottom: 36px;
 }
 
+#section-statement .section-div-text {
+    padding-bottom: 2rem;
+}
+
 #section-cards-svg-top {
     margin-top: -8vh;
     margin-bottom: -6vh;
@@ -282,6 +286,10 @@ iframe {
 
 .section-card:hover img {
     transform: scale(1.1);
+}
+
+#section-hace-tu-pedido-div-content p {
+    padding-bottom: 2rem;
 }
 
 #section-contact-svg-top {
@@ -421,7 +429,7 @@ iframe {
     color: white;
     margin: 0 auto;
     margin-top: 16px;
-    padding-top: 19px;
+    padding-top: 23px;
     padding-bottom: 15px;
     padding-left: 28px;
     padding-right: 28px;
@@ -496,7 +504,7 @@ button a {
 }
 
 #galeria-div-button-ver-menu {
-    padding-top: 32px;
+    padding-top: 3rem;
     padding-bottom: 32px;
     text-align: center;
 }
@@ -628,7 +636,7 @@ footer a:hover {
 }
 
 #footer-top-seguinos img {
-    width: 2vw;
+    width: 1.5rem;
     height: auto;
 }
 
@@ -639,6 +647,7 @@ footer hr {
 
 #footer-p-copyright {
     color: white;
+    text-align: center;
 }
 
 /* ===== TABLETS ==== */
